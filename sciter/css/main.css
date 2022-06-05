@@ -1,0 +1,79 @@
+@font-face {
+  font-family: 'Open Sans Bold';
+  src: url('this://app/css/open-sans-bold.ttf');
+}
+
+@font-face {
+  font-family: 'Open Sans Regular';
+  src: url('this://app/css/open-sans-regular.ttf');
+}
+
+* {
+  image-rendering: optimize-quality;
+}
+
+html {
+  background-color: transparent;
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 32px;
+  background-color: #fffef7;
+  color: #262626;
+}
+
+#buttons {
+  flow: horizontal;
+}
+
+#buttons div {
+  width: 32px;
+  height: 32px;
+  flow: horizontal;
+  stroke: transparent;
+  fill: #262626;
+  background-size: 28px 28px;
+  background-position: center center;
+}
+
+#buttons div:hover {
+  fill: #676765;
+  background-position: center calc(50% + 1px);
+}
+
+#save {
+  background-image: url(path: M17 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V7l-4-4zm-5 16c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3zm3-10H5V5h10v4z);
+}
+
+#load {
+  margin-left: 32px;
+  background-image: url('path: M20 6h-8l-2-2H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm0 12H4V8h16v10z');
+}
+
+#fullscreen {
+  margin-left: 32px;
+  background-image: url(path: M7 14H5v5h5v-2H7v-3zm-2-4h2V7h3V5H5v5zm12 7h-3v2h5v-5h-2v3zM14 5v2h3v3h2V5h-5z);
+}
+
+#fullscreen.fullscreen {
+  background-image: url(path: M5 16h3v3h2v-5H5v2zm3-8H5v2h5V5H8v3zm6 11h2v-3h3v-2h-5v5zm2-11V5h-2v5h5V8h-3z);
+}
+
+#about {
+  margin-left: *;
+  background-image: url('path: M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z');
+}
+
+textarea {
+  width: calc(100vw - 64px);
+  height: calc(100vh - 128px);
+  margin-top: 32px;
+  background: transparent;
+  font-family: 'Open Sans Regular';
+  font-size: 18px;
+  overflow-y: auto;
+  border-width: 0;
+  font-weight: bold;
+}
